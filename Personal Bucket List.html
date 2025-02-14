@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: yellow;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 25px 0;
+            font-family: "Times New Roman", serif;
+            color: #000000;
+            font-size: 40px;
+            background-color: #ffffff;
+        }
+
+        .Personal__Bucket__List {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #009578;
+            border-bottom: 5px solid #009578;
+        }
+
+        .Personal__Bucket__List li {
+            padding: 15px 20px;
+            border-bottom: 1px solid #dcdde1;
+            display: flex;
+            align-items: center;
+            transition: background-color 300ms ease;
+        }
+
+        .Personal__Bucket__List input[type="checkbox"] {
+            margin-right: 16px;
+            width: 20px;
+            height: 20px;
+            accent-color: #3498db;
+            cursor: pointer;
+        }
+
+        .Personal__Bucket__List li:hover {
+            background-color: rgb(228, 228, 228);
+        }
+
+        @media (max-width: 600px) {
+            .Personal__Bucket__List li {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personal Bucket List</h1>
+    <main>
+        <ul class="Personal__Bucket__List">
+            <li>
+                <input type="checkbox" checked>
+                Lean To Play A Musical Instrument
+            </li>
+            <li>
+                <input type="checkbox">
+                Take A Road Trip Across The Country
+            </li>
+            <li>
+                <input type="checkbox">
+                Try An Extreme Sport
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                Visit A Unesco World Heritage Site
+            </li>
+            <li>
+                <input type="checkbox">
+                Write A Book Or Start A Blog
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                Take A Cooking Class In A Foreign Country
+            </li>
+            <li>
+                <input type="checkbox">
+                Attend The Olympics Or A Major Sporting Event
+            </li>
+            <li>
+                <input type="checkbox" checked>
+                Take A Scenic Train Journey
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
